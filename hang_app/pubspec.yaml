@@ -1,0 +1,31 @@
+name: hang
+description: "智能晾衣杆"
+#  flutter build apk --release
+#  打包后apk位置
+#  build\app\outputs\flutter-apk\app-release.apk
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^5.1.0
+  cupertino_icons: ^1.0.6
+  font_awesome_flutter: ^10.4.0
+  http: ^1.2.2
+  intl: ^0.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+
+flutter:
+
+  uses-material-design: true
+
