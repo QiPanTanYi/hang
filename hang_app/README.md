@@ -1,33 +1,49 @@
-# hang
-
-智能晾衣杆
+# hang_app
 
 ### 文件路径说明
 
 ```
-HANG
+hang_app
 |
-├── Document	文档图片
+├── lib
 |
-├── image		素材存放点
+├── ─── servies					请求接口服务
 |
-├── common.css	通用CSS样式
+├── ─── ─── services.dart		调用/status 查看状态
 |
-├── index.html	网页入口
+├── ─── widgets					前端组件
 |
-├── links.js	编辑收藏信息
+├── ─── ─── date_display.dart	显示时间以及刷新按钮
 |
-├── openLinksInNewTab.js	新窗口打开+顶部跳转
+├── ─── ─── drying_rack.dart	晾衣杆状态
 |
-├── raindrop.js	雨滴特效
+├── ─── ─── fan_show.dart		风扇状态
 |
-└── README.md	说明文档
+├── ─── ─── temperature_humidity.dart	城市温湿度
+|
+├── ─── main.dark				前端主程序
+|
+└── README.md					说明文档
 ```
 
-### Flutter打包
+<br/>
+
+### 配置版本
+
+| Java/jdk | 17.0.12 |
+| -------- | ------- |
+| Flutter  | 3.19.5  |
+| Dart     | 3.3.3   |
+| Android  | 13      |
+
+<br/>
+
+### Flutter 安卓打包
 
 ```shell
 flutter build apk --release
 ```
 
-​		打包后的apk安卓安装包在flutter项目文件夹根目录中的 **build\app\outputs\flutter-apk\app-release.apk** 。
+​		打包后的apk安卓安装包为Flutter项目文件夹根目录中的 **build\app\outputs\flutter-apk\app-release.apk** 。
+
+![APP](../img/app.png)
